@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Evelyn</title>
+    <link href="../Content/Estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Encabezado (Header) -->
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('inicio')">Inicio</a></li>
+                <li><a onclick="showSection('nosotros')">Sobre Nosotros</a></li>
+                <li><a onclick="showSection('productos')">Productos/Servicios</a></li>
+                <li><a onclick="showSection('blog')">Blog/Noticias</a></li>
+                <li><a onclick="showSection('contactanos')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página de Inicio (Home) -->
+    <section id="inicio" class="active">
+        <div class="featured-media">
+            <img src="../Images/foto presentacion.jpg" alt="Imagen de la tienda">
+
+        </div>
+        <h1>Tienda Evelyn</h1>
+        <p>En Tienda Evelyn, nos especializamos en ofrecer una amplia variedad de productos básicos para tu día a día.
+            Desde refrescantes bebidas, deliciosos helados, golosinas y dulces, hasta productos esenciales para la
+            preparación de comidas y limpieza en el hogar.
+            Descubre la conveniencia de encontrar todo lo que necesitas en un solo lugar,
+            con la calidad y atención que mereces.</p>
+        <button onclick="showSection('nosotros')">Descubrir más</button>
+        <button class="productos-button" onclick="showSection('productos')">Ver Productos</button>
+    </section>
+
+    <!-- Sobre Nosotros (About Us) -->
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <h3>Historia de la empresa</h3>
+        <p>Tienda Evelyn abrió sus puertas en 2009 en Guastatoya, El Progreso,
+            gracias a María Mata. Con el deseo de ayudar a su comunidad, María viajaba semanalmente a comprar fuera del
+            departamento,
+            para ofrecer productos a mejores precios. Lo que comenzó como un pequeño negocio, se convirtió en una tienda
+            esencial para la colonia y sus alrededores.
+            El nombre "Evelyn" fue elegido en honor a su hija mayor,
+            reflejando el compromiso familiar de María.
+        </p>
+        <h3>Nuestra Mision</h3>
+        <p>En Tienda Evelyn, nos dedicamos a ofrecer productos de alta calidad a precios accesibles para satisfacer las
+            necesidades diarias de nuestra comunidad.
+            Con un servicio amable y personalizado, buscamos ser el lugar de referencia para todos nuestros clientes,
+            manteniendo siempre nuestro espíritu familiar.</p>
+        <div class="equipo">
+            <h3>Equipo</h3>
+            <div class="team-member">
+                <p> Doña Mary, como todos la conocen, propietaria de la tienda esperando para atender con gusto</p>
+            </div>
+        </div>
+        <div class="valores">
+            <h3>Cultura</h3>
+            <p>En Tienda Evelyn, cultivamos una cultura de servicio familiar y buena atención. Creemos en la importancia
+                de la comunidad y
+                nos esforzamos por brindar un ambiente acogedor y de confianza a todos nuestros clientes.</p>
+            <h3>Valores</h3>
+            <p>Ofrecemos nuestros productos frescos y de alta calidad.
+                Tenemos compromiso y nos dedicamos a satisfacer las necesidades de nuestra comunidad.
+                Proporcionamos accesibilidad con los productos a precios justos.</p>
+        </div>
+    </section>
+
+    <!-- Productos/Servicios -->
+    <section id="productos">
+        <div class="featured-media">
+            <img src="../Images/Foto productos.jpg" alt="Imagen de productos">
+        </div>
+        <button class="Contactanos" onclick="showSection('contactanos')">Hacer un pedido</button>
+        <div class="productos-container">
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Cafe del cafe sobre 1.50.jpeg" alt="del cafe">
+                    <div class="producto-info">
+                        <h3>Cafe del cafe Sobre</h3>
+                        <p>Precio: Q 1.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Sobre cafe nescafe 2.50.jpeg" alt="nescafe">
+                    <div class="producto-info">
+                        <h3>Sobre de cafe Nescafe</h3>
+                        <p>Precio: Q2.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Cafe quetzal 1Q.jpeg" alt="cafe quetzal">
+                    <div class="producto-info">
+                        <h3>Sobre Cafe Quetzal</h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/la jarrilla 2.50.jpeg" alt="cafe la jarrilla">
+                    <div class="producto-info">
+                        <h3>SSobre de Cafe la Jarrillita</h3>
+                        <p>Precio: Q2.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Aceite ideal 12Q.jpeg" alt="ideal">
+                    <div class="producto-info">
+                        <h3>Aceite Ideal</h3>
+                        <p>Precio: Q12.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Aceite patrona 12Q.jpeg" alt="patrona">
+                    <div class="producto-info">
+                        <h3>Aceite Patrona</h3>
+                        <p>Precio: Q12.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Arroz gallo dorado 8.50Q.jpeg" alt="gallo dorado">
+                    <div class="producto-info">
+                        <h3>Libra de arroz Gallo Dorado</h3>
+                        <p>Precio: Q8.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Arroz molinero 8Q.jpeg" alt="Molinero">
+                    <div class="producto-info">
+                        <h3>Libra de Arroz Molinero</h3>
+                        <p>Precio: Q8.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/2Q.jpeg" alt="chiki">
+                    <div class="producto-info">
+                        <h3>Galleta Chiki pequeña</h3>
+                        <p>Precio: Q2.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/3 pac mega bola max poder 30Q.jpeg" alt="jabon max">
+                    <div class="producto-info">
+                        <h3>3pack Mega bola Max poder </h3>
+                        <p>Precio: Q30.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/AMP 5Q.jpeg" alt="AMP">
+                    <div class="producto-info">
+                        <h3>Bebida energizante AMP 365</h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Atun la sierna 10Q.jpeg" alt="atun">
+                    <div class="producto-info">
+                        <h3>Lata de atun La Sirena</h3>
+                        <p>Precio: Q10.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Blanca nieves 5Q.jpeg" alt="blanca">
+                    <div class="producto-info">
+                        <h3>Jabon en polvo Blanca Nieves</h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div> 
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Bolsa medallones pollo rey 6Q.jpeg" alt="medallones">
+                    <div class="producto-info">
+                        <h3>Bolsa de medallones Pollo Rey</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Caja YaEsta Empanizador 5Q.jpeg" alt="empanizador">
+                    <div class="producto-info">
+                        <h3>Caja YaEsta! empanizador </h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Coca 600ml 6Q.jpeg" alt="coca">
+                    <div class="producto-info">
+                        <h3>Coca Cola 600ml</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Coca cola 2.5 19Q.jpeg" alt="cocac">
+                    <div class="producto-info">
+                        <h3>Coca Cola 2.5L</h3>
+                        <p>Precio: Q19.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Coca cola 3L 23Q.jpeg" alt="coca3">
+                    <div class="producto-info">
+                        <h3>Coca Cola 3L</h3>
+                        <p>Precio: Q23.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Coca lata 5Q.jpeg" alt="cocal">
+                    <div class="producto-info">
+                        <h3>Coca Cola lata</h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/condimentos malher 1Q.jpeg" alt="condimentos">
+                    <div class="producto-info">
+                        <h3>Condimentos Malher</h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Doritos 4Q.jpeg" alt="doritos">
+                    <div class="producto-info">
+                        <h3>Doritos</h3>
+                        <p>Precio: Q4.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/fabuloso 2Q.jpeg" alt="fabuloso">
+                    <div class="producto-info">
+                        <h3>Fabuloso</h3>
+                        <p>Precio: Q2.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Frijol rojo ducal 6Q.jpeg" alt="rojo">
+                    <div class="producto-info">
+                        <h3>Frijol Rojo Ducal</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Galleta club extra 1Q.jpeg" alt="Galleta">
+                    <div class="producto-info">
+                        <h3>Galleta Salada Club Extra </h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Galleta florentina.jpeg" alt="flortentina">
+                    <div class="producto-info">
+                        <h3>Galleta Florentina</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Galletas chokis 7Q.jpeg" alt="chokis">
+                    <div class="producto-info">
+                        <h3>Galleta Chokis</h3>
+                        <p>Precio: Q7.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jabon ambar 6Q.jpeg" alt="ambar">
+                    <div class="producto-info">
+                        <h3>Jabon Ambar</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Gatorade 9Q.jpeg" alt="gatorade">
+                    <div class="producto-info">
+                        <h3>Gatorade</h3>
+                        <p>Precio: Q9.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/jabon bex 10Q.jpeg" alt="bex">
+                    <div class="producto-info">
+                        <h3>jabon Bex</h3>
+                        <p>Precio: Q10.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jabon en polvo fab 13Q.jpeg" alt="fab">
+                    <div class="producto-info">
+                        <h3>Jabon en polvo Fav</h3>
+                        <p>Precio: Q13.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jalapenos Diana 1Q.jpeg" alt="Diana">
+                    <div class="producto-info">
+                        <h3>Jalapeños Diana</h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Javon en polvo ultra klin 10Q.jpeg" alt="ultra klin">
+                    <div class="producto-info">
+                        <h3>Jabon en polvo Ultra Klin</h3>
+                        <p>Precio: Q10.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo de lata del valle 5Q.jpeg" alt="del valle">
+                    <div class="producto-info">
+                        <h3>Jugo de lata del Valle</h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo de naranja del valle 4Q.jpeg" alt="naranjavalle">
+                    <div class="producto-info">
+                        <h3>Jugo de Naranja del Valle</h3>
+                        <p>Precio: Q4.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo del frutal de vegetales lata 4.50.jpeg" alt="vegetales">
+                    <div class="producto-info">
+                        <h3>Jugo del Frutal Vegetales Lata</h3>
+                        <p>Precio: Q4.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo del frutal lata 4.50.jpeg" alt="lata">
+                    <div class="producto-info">
+                        <h3>Jugo del Frutal lata</h3>
+                        <p>Precio: Q4.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo kerns de caja 3Q.jpeg" alt="caja">
+                    <div class="producto-info">
+                        <h3>Jugo Kerns de caja</h3>
+                        <p>Precio: Q3.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo kerns vegetales 4.50Q.jpeg" alt="vegetalesk">
+                    <div class="producto-info">
+                        <h3>Jugo Kerns vegetales lata</h3>
+                        <p>Precio: Q4.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Jugo tampico pachon 4Q.jpeg" alt="tampico">
+                    <div class="producto-info">
+                        <h3>Jugo Tampico pachon</h3>
+                        <p>Precio: Q4.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Lata frijol ducal 12Q.jpeg" alt="ducal">
+                    <div class="producto-info">
+                        <h3>Frijo Ducal lata</h3>
+                        <p>Precio: Q12.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Leche foremost en bolsa 6.50Q.jpeg" alt="leche">
+                    <div class="producto-info">
+                        <h3>Bolsa de leche Foremost</h3>
+                        <p>Precio: Q6.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Libra de pollo 16Q.jpeg" alt="pollo">
+                    <div class="producto-info">
+                        <h3>Libra de pollo</h3>
+                        <p>Precio: Q16.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Nacho Diana 1Q.jpeg" alt="nacho">
+                    <div class="producto-info">
+                        <h3>Nachi Diana</h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/NAranjada con soda 3.50Q.jpeg" alt="naranjada">
+                    <div class="producto-info">
+                        <h3>Naranjada con soda</h3>
+                        <p>Precio: Q3.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Pasta ina 4.50.jpeg" alt="pasta">
+                    <div class="producto-info">
+                        <h3>Pasta Ina</h3>
+                        <p>Precio: Q4.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Pepsi 3L 16Q.jpeg" alt="Pepsi">
+                    <div class="producto-info">
+                        <h3>Pepsi 3L</h3>
+                        <p>Precio: Q16.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Pepsita 2.50Q.jpeg" alt="Pepsita">
+                    <div class="producto-info">
+                        <h3>Pepsita</h3>
+                        <p>Precio: Q2.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Ppas LAys 4Q.jpeg" alt="lays">
+                    <div class="producto-info">
+                        <h3>Papas Lays</h3>
+                        <p>Precio: Q4.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Pwerade 6Q.jpeg" alt="power">
+                    <div class="producto-info">
+                        <h3>Powerade</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Revive bolsa 2Q.jpeg" alt="Revive">
+                    <div class="producto-info">
+                        <h3>Revive Bolsa</h3>
+                        <p>Precio: Q2.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Sal refinada 2.50Q.jpeg" alt="sal">
+                    <div class="producto-info">
+                        <h3>Sal refinada</h3>
+                        <p>Precio: Q2.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Salsa del Monte 3.50Q.jpeg" alt="salsa">
+                    <div class="producto-info">
+                        <h3>Salsa de tomate Del Monte</h3>
+                        <p>Precio: Q3.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Salsa naturas 4.50Q.jpeg" alt="naturas">
+                    <div class="producto-info">
+                        <h3>Salsa Naturas</h3>
+                        <p>Precio: Q4.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Sardina la sirena 10Q.jpeg" alt="la sirena">
+                    <div class="producto-info">
+                        <h3>Sardina la Sirena</h3>
+                        <p>Precio: Q10.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/sardina la sirena grande 22Q.jpeg" alt="sirena">
+                    <div class="producto-info">
+                        <h3>Sardina la Sirena grande</h3>
+                        <p>Precio: Q22.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Saviole 7Q.jpeg" alt="saviloe">
+                    <div class="producto-info">
+                        <h3>Saviloe</h3>
+                        <p>Precio: Q7.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Scott 4 rollos 4Q.jpeg" alt="papel">
+                    <div class="producto-info">
+                        <h3>Scott 4 rollos</h3>
+                        <p>Precio: Q22.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Sopa jumbo laky men 6Q.jpeg" alt="laky">
+                    <div class="producto-info">
+                        <h3>Sopa jumbo Laky Men</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Sopa knor 3.50Q.jpeg" alt="knor">
+                    <div class="producto-info">
+                        <h3>Sopa Knor</h3>
+                        <p>Precio: Q3.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Sopa Maggi.jpeg" alt="Maggi">
+                    <div class="producto-info">
+                        <h3>Sopa Maggi</h3>
+                        <p>Precio: Q3.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Takis 5Q.jpeg" alt="takis">
+                    <div class="producto-info">
+                        <h3>Takis</h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Taqueritos 2Q.jpeg" alt="Taqueritos">
+                    <div class="producto-info">
+                        <h3>Taqueritos</h3>
+                        <p>Precio: Q2.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Tortillitas se;orial 1Q.jpeg" alt="señorial">
+                    <div class="producto-info">
+                        <h3>Torillitas Señorial</h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Tortitas carne toledo 6Q.jpeg" alt="toledo">
+                    <div class="producto-info">
+                        <h3>Tortitas de carne Toledo</h3>
+                        <p>Precio: Q6.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Tortix 1Q.jpeg" alt="tortrix">
+                    <div class="producto-info">
+                        <h3>Tortrix</h3>
+                        <p>Precio: Q1.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/vanish 5.50Q.jpeg" alt="vanish">
+                    <div class="producto-info">
+                        <h3>Vanish</h3>
+                        <p>Precio: Q5.50 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/Virogrip 5Q.jpeg" alt="Virogrip">
+                    <div class="producto-info">
+                        <h3>Virogrip Dia y Noche</h3>
+                        <p>Precio: Q5.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/ya 2Q.jpeg" alt="ya">
+                    <div class="producto-info">
+                        <h3>Bebida en polvo Ya! </h3>
+                        <p>Precio: Q2.0 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-content">
+                    <img src="../Images/yus 2.50Q.jpeg" alt="yus">
+                    <div class="producto-info">
+                        <h3>Bebida en polvo Yus</h3>
+                        <p>Precio: Q2.50 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="servicio">
+            <h3>Servicios</h3>
+            <p>En tienda Evelyn ofrecemos un excelente servicio al cliente para que cada uno quede 
+                satisfecho con la atencion brindada y las experiencias positivas de su visita</p>
+        </div>
+    </section>
+
+
+    <!-- Blog/Noticias -->
+    <section id="blog">
+        <h2>Blog/Noticias</h2>
+        <article class="blog-post">
+            <h3>Blog</h3>
+            <p>En Tienda Evelyn, estamos comprometidos con la sostenibilidad y la moda ética. 
+                Nos enorgullece anunciar que una parte de nuestro producto está hecho con materiales reciclados y sostenibles. 
+                Además, estamos implementando prácticas más ecológicas en nuestros procesos. 
+                Juntos, podemos hacer una diferencia.</p>
+        </article>
+        <article class="news">
+            <h3>Noticia de la Empresa</h3>
+            <p>¡Estamos emocionados de anunciar el lanzamiento de nuestra nueva página web! En Tienda Evelyn, 
+                estamos comprometidos a ofrecerte los mejores productos y servicios. 
+                Explora nuestra tienda en línea y descubre las últimas tendencias y ofertas exclusivas.</p>
+        </article>
+    </section>
+
+    <!-- Contacto (Contact Us) -->
+    <section id="contactanos">
+        <h2>Contacto</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="subject" 
+            value="Sales inquiry from mysitename.netlify.app" />
+            <p>
+              <label>Nombre: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Correo: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Mensaje: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
+          
+        <div class="contact-info">
+            <p>Dirección: Encuéntranos en Colonia Nueva Vida, en Guastatoya, El Progreso.</p>
+            <p>Correo Electrónico: tiendaevelyn6@gmail.com</p>
+        </div>
+        <div class="map">
+            <!-- Insertar mapa interactivo aquí -->
+        </div>
+    </section>
+
+    <!-- Pie de Página (Footer) -->
+    <footer>
+        <p>&copy; 2024 Tienda Evelyn. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#home {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.5;
+}
+
+#home button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#home button:hover {
+    background-color: #0056b3;
+}
+
+#home .featured-media {
+    margin-top: 20px;
+}
+
+#home .featured-media img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#home .testimonials {
+    margin-top: 20px;
+}
+
+#home .testimonials h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#home .testimonials p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
